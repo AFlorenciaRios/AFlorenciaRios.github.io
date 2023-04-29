@@ -2,7 +2,9 @@ const CALCULAR = document.getElementById('calcular');
 const ERROR = document.getElementById('error');
 const FLU = document.getElementById('flu');
 const MAN = document.getElementById('man');
-CALCULAR.addEventListener('click', () => {
+CALCULAR.addEventListener('click',(e)=> { 
+e.preventDefault()
+     
     const DATO = document.getElementById('peso').value
     //validamos que se cargue un dato:
     if (DATO > 0){
@@ -45,5 +47,7 @@ CALCULAR.addEventListener('click', () => {
         ERROR.style.display = 'block';
         FLU.style.display = 'none';
         MAN.style.display = 'none';
-    }
-})
+        }}
+)
+
+ 
